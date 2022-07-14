@@ -18,11 +18,12 @@
 import sys 
 
 if __name__=='__main__':
-
     try:
-        arquivo= open(sys.argv, "r")
-        x= arquivo.readline()
-        
+        arquivo= open(sys.argv[1], "r")
+        x= arquivo.readlines()
+        y= x[-10:]
+        for a in y:
+            print(a)
         arquivo.close()
     except FileNotFoundError:
-        print("ERRO ESSE ARQUIVO NÃO EXITE")
+        print("ERRO ESSE ARQUIVO NÃO EXISTE")
