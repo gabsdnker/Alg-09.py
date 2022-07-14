@@ -8,3 +8,5 @@ with open("aternados.txt", "w") as file:
     for temp in ["Palavras_português_br-utf8.txt", "Palavra_portugues_br-utf16.txt"]:
         with open(temp, "r")  as t:
             file.writelines(t)
+
+            
